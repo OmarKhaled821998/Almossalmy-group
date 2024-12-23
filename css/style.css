@@ -140,13 +140,9 @@ body{
 }
 
 /* skill section starts */
-.skill button:hover {
-    background-color: #fca61f;
-    color: #fff;
-    transform: scale(1.05);
-    transition: all 0.3s;
+.skill{
+    background-color: rgb(234, 234, 249);
 }
-
 .progress-card{
     padding: 12% 10% 10% 15%;
     background-color: #fff;
@@ -542,67 +538,3 @@ footer .link-group a:hover{
     background-color: #0056b3;
   }
   
-  @media (max-width: 576px) {
-    .navbar-brand {
-      font-size: 1.2rem; /* Adjust the logo text size */
-      word-wrap: break-word; /* Ensure long words wrap */
-    }
-  
-    .navbar-nav {
-      display: flex;
-      flex-direction: column; /* Stack links vertically */
-      gap: 0.5rem;
-      text-align: center;
-    }
-  
-    .c-btn {
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    #navbar-top .container-fluid {
-      padding: 0 1rem; /* Reduce horizontal padding */
-    }
-  }
-
-  @media (max-width: 576px) {
-    .home h2 {
-      font-size: 2rem; /* Reduce heading size */
-      line-height: 2.5rem;
-    }
-  
-    .home p {
-      font-size: 1rem;
-      margin: 1rem 0;
-      text-align: center; /* Center align text for better mobile experience */
-    }
-  
-    .h-btn {
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .home img {
-      width: 100%; /* Ensure the image is responsive */
-      height: auto;
-    }
-  }
-  @media (max-width: 576px) {
-    .portfolio-body .row {
-      flex-direction: column; /* Stack portfolio cards vertically */
-      align-items: center;
-    }
-  
-    .counter-container {
-      flex-direction: column; /* Stack counters */
-      gap: 1rem;
-    }
-  
-    .counter-item {
-      width: 90%; /* Make counters fit within mobile width */
-    }
-  }
-  * {
-    outline: 1px solid red; /* Highlights overflowing elements */
-  }
-      
