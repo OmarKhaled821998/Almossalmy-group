@@ -234,11 +234,9 @@ body{
     transform: scale(1.2,1.2);
     transition-duration: 1s;
 }
-.testimonial h4 {
-    font-size: 1.8rem; /* Original: 1.2rem */
+.testimonial h4{
     color: #3f396d;
 }
-
 .testimonial i{
     font-size: 2.9rem;
     color: #fca61f;
@@ -544,85 +542,67 @@ footer .link-group a:hover{
     background-color: #0056b3;
   }
   
-
-  /* Mobile View (max-width: 576px) */
-@media (max-width: 576px) {
-    /* Navbar adjustments */
+  @media (max-width: 576px) {
     .navbar-brand {
-      font-size: 1.5rem; /* Smaller logo text */
+      font-size: 1.2rem; /* Adjust the logo text size */
+      word-wrap: break-word; /* Ensure long words wrap */
     }
   
     .navbar-nav {
-      gap: 1rem; /* Reduce spacing between links */
+      display: flex;
+      flex-direction: column; /* Stack links vertically */
+      gap: 0.5rem;
+      text-align: center;
     }
   
     .c-btn {
-      font-size: 1rem;
+      font-size: 0.9rem;
       padding: 0.5rem 1rem;
     }
   
-    /* Home Section */
+    #navbar-top .container-fluid {
+      padding: 0 1rem; /* Reduce horizontal padding */
+    }
+  }
+
+  @media (max-width: 576px) {
     .home h2 {
-      font-size: 2rem;
+      font-size: 2rem; /* Reduce heading size */
       line-height: 2.5rem;
     }
+  
     .home p {
       font-size: 1rem;
-      text-align: center; /* Center align text */
+      margin: 1rem 0;
+      text-align: center; /* Center align text for better mobile experience */
     }
+  
+    .h-btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
     .home img {
-      width: 100%; /* Full-width image */
-      margin-top: 1rem;
+      width: 100%; /* Ensure the image is responsive */
+      height: auto;
+    }
+  }
+  @media (max-width: 576px) {
+    .portfolio-body .row {
+      flex-direction: column; /* Stack portfolio cards vertically */
+      align-items: center;
     }
   
-    /* Portfolio Cards */
-    .portfolio-body .card {
-      margin-bottom: 1.5rem; /* Add spacing between cards */
-    }
-  
-    /* Counter Section */
     .counter-container {
       flex-direction: column; /* Stack counters */
-      gap: 10px;
-    }
-    .counter-item {
-      width: 100%; /* Full width */
+      gap: 1rem;
     }
   
-    /* Contact Form */
-    .contact-form .form-control {
-      width: 100%; /* Full width input fields */
+    .counter-item {
+      width: 90%; /* Make counters fit within mobile width */
     }
   }
-  
-  /* Tablet View (max-width: 768px) */
-  @media (max-width: 768px) {
-    /* Navbar adjustments */
-    .navbar-brand {
-      font-size: 1.8rem;
-    }
-  
-    /* Home Section */
-    .home h2 {
-      font-size: 2.5rem;
-    }
-    .home p {
-      font-size: 1.1rem;
-    }
-  
-    /* Portfolio Cards */
-    .portfolio-body .card {
-      margin-bottom: 1rem;
-    }
-  
-    /* Counter Section */
-    .counter-item {
-      width: 45%; /* Adjust width for two items per row */
-    }
-  
-    /* Contact Section */
-    .contact .info-block {
-      margin-bottom: 1.5rem;
-    }
+  * {
+    outline: 1px solid red; /* Highlights overflowing elements */
   }
-  
+      
