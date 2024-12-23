@@ -140,9 +140,13 @@ body{
 }
 
 /* skill section starts */
-.skill{
-    background-color: rgb(234, 234, 249);
+.skill button:hover {
+    background-color: #fca61f;
+    color: #fff;
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
+
 .progress-card{
     padding: 12% 10% 10% 15%;
     background-color: #fff;
@@ -230,9 +234,11 @@ body{
     transform: scale(1.2,1.2);
     transition-duration: 1s;
 }
-.testimonial h4{
+.testimonial h4 {
+    font-size: 1.8rem; /* Original: 1.2rem */
     color: #3f396d;
 }
+
 .testimonial i{
     font-size: 2.9rem;
     color: #fca61f;
@@ -536,5 +542,87 @@ footer .link-group a:hover{
   
   .contact .contact-form button:hover {
     background-color: #0056b3;
+  }
+  
+
+  /* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Navbar adjustments */
+    .navbar-brand {
+      font-size: 1.5rem; /* Smaller logo text */
+    }
+  
+    .navbar-nav {
+      gap: 1rem; /* Reduce spacing between links */
+    }
+  
+    .c-btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    /* Home Section */
+    .home h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .home p {
+      font-size: 1rem;
+      text-align: center; /* Center align text */
+    }
+    .home img {
+      width: 100%; /* Full-width image */
+      margin-top: 1rem;
+    }
+  
+    /* Portfolio Cards */
+    .portfolio-body .card {
+      margin-bottom: 1.5rem; /* Add spacing between cards */
+    }
+  
+    /* Counter Section */
+    .counter-container {
+      flex-direction: column; /* Stack counters */
+      gap: 10px;
+    }
+    .counter-item {
+      width: 100%; /* Full width */
+    }
+  
+    /* Contact Form */
+    .contact-form .form-control {
+      width: 100%; /* Full width input fields */
+    }
+  }
+  
+  /* Tablet View (max-width: 768px) */
+  @media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar-brand {
+      font-size: 1.8rem;
+    }
+  
+    /* Home Section */
+    .home h2 {
+      font-size: 2.5rem;
+    }
+    .home p {
+      font-size: 1.1rem;
+    }
+  
+    /* Portfolio Cards */
+    .portfolio-body .card {
+      margin-bottom: 1rem;
+    }
+  
+    /* Counter Section */
+    .counter-item {
+      width: 45%; /* Adjust width for two items per row */
+    }
+  
+    /* Contact Section */
+    .contact .info-block {
+      margin-bottom: 1.5rem;
+    }
   }
   
