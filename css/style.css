@@ -483,12 +483,14 @@ footer .link-group a:hover{
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
   }
   
   .contact .info-block h5 {
     color: #007bff;
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 16px;
   }
   
   .contact .info-block p,
@@ -496,7 +498,16 @@ footer .link-group a:hover{
     margin: 0;
     font-size: 0.95rem;
   }
+  .location p {
+    margin-bottom: 5px; /* Reduce extra spacing */
+    font-size: 13px; /* Slightly smaller text */
+}
   
+.location a {
+    font-size: 12px;
+    color: #007bff; /* Keep link color visible */
+    text-decoration: none;
+}
   .contact .info-block a {
     color: #007bff;
     text-decoration: none;
